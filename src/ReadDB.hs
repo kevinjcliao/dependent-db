@@ -20,9 +20,9 @@ printName :: Row NameSchema -> IO ()
 printName (first ::> last ::> _) = putStrLn (first ++ " " ++ last)
 
 readDB classes_sch students_sch = do
+  putStr "Hello, world!" 
   classes_tab  <- loadTable "classes.table" classes_sch
   students_tab <- loadTable "students.table" students_sch
-
   putStr "Whose students do you want to see? "
   prof <- getLine
 

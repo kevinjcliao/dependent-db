@@ -5,7 +5,6 @@
 
 {-# LANGUAGE TemplateHaskell, TypeInType #-}
 {-# OPTIONS_GHC -fno-warn-unused-imports #-}
-  -- improves error messages during example
 
 module Main where
 
